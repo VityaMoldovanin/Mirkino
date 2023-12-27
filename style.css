@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2? Family= Inter & display=swap');
+:root{
+    --fontsize1: 32px;
+}
+body{
+    margin: 0%;
+    font-family: 'Inter', sans-serif;
+}
+header{
+    background-image: url(fon.png);
+    background-size: cover;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+}
+.subcribe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin: 7%;
+  
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: var(--fontsize1);
+}
+.Account>img{
+    height: 64px;
+    margin: 15px;
+  
+
+}
+h1{
+    text-align: center;
+    font-size: var(--fontsize1);
+}
+main img{
+    width: 23%;
+    height: 48%;
+}
+.New1{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    
+}
+.New1-1{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+article{
+    padding: 30px;
+    font-size: 1.8em;
+}
+button{
+width: 24%;
+height: 10%;
+background: #F90;
+font-size: var(--fontsize1);
+}
+.New1-text{
+    padding: 30px;
+}
+footer{
+    background-image: url(Rectangle.png);
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+ gap: 80px; 
+padding: 80px 0px;
+
+}
+.nav-footer{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:800px ;
+    width: 24%;
+    height: 10%;
+}
+.Kontacts{
+    
+    justify-content: space-around;
+    align-items: center;
+    gap:240px;
+    color: white;
+   
+    
+}
+.Social-media>img{
+    width: 22px;
+height: 22px;
+border: 1px white solid;
+border-radius: 50%;
+padding: 10px;
+}
+.Social-media{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+   margin-top: 40px;
+}
+.button-white{
+    border-radius: 27.708px;
+background: var(--White, #FFF);
+width: 46%;
+height: 10%;
+font-size: 24px;
+text-transform: uppercase;
+padding: 2% 5%;
+}
+.logo-footer{
+    border-radius: 50%;
+   animation: fadeInDown 1s infinite;
+}
+li{
+    font-size: 1.9em;
+    list-style-type: none;
+    line-height: 68px;
+}
+.Films2{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 300px;
+    align-items: center;
+}
+iframe{
+    margin: 100px 100px 100px 200px;
+    border-radius: 40px;
+    
+}
+/* Анимации */
+a:hover{
+    transform: scale(1.2);
+}
+img:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+.button-white:hover{
+    background-color: rgb(255, 189, 102);
+}
+button:hover{
+    background-color: #747373;
+}
+
+/* планшеты вертикально */
+@media (min-width: 768px) and (max-width: 991px) {
+
+header{ 
+    flex-direction: column;
+    text-align: center;
+justify-content: center;
+}
+.Account{
+    margin-left: 40px;
+}
+a{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.foto{
+    margin-top: 150px;
+}
+p{
+    font-size: 24px;
+}
+.Human{
+    margin-top: 250px;
+}
+.slovo{
+    margin-top: 300px;
+}
+.supernatural{
+    margin-top: 250px;
+}
+button{
+    width: 200px;
+    height: 50px;
+}
+.button-white{
+    width: 200px;
+    font-size: 22px;
+}
+.rights{
+    font-size: 10px;
+    
+}
+.button{
+    gap: 400px;
+}
+
+}
+  /* Телефоны горизонтально */
+  @media(min-width:481px) and (max-width: 767px){
+   .New1{
+    flex-direction: column;
+    align-items: center;
+   }
+   .foto{
+    width: 70%;
+   }
+   .New1-text{
+    font-size: 16px;
+   }
+   button{
+    width: 40%;
+    font-size: 24px;
+   }
+   .button{
+    gap: 100px;
+   }
+   footer{
+    padding: 10px;
+   }
+   nav{
+    margin: 0%;
+    padding: 0%;
+   }
+   .button-white{
+    font-size: 14px;
+    width: 120px;
+    height: 50px;
+   }
+
+
+
+
+  }
+
+    /* Телефоны вертикально */
+  @media(max-width: 480px){
+    .New1{
+        flex-direction: column;
+        align-items: center;
+       }
+       .foto{
+        width: 70%;
+       }
+       .New1-text{
+        font-size: 16px;
+       }
+       .nav-footer{
+        flex-direction: column;
+        margin-left: 60px;
+       }
+       .button{
+        flex-direction: column;
+        gap: 30px;
+       }
+       button{
+        width: 100px;
+        height: 25px;
+    }
+    .button-white{
+        font-size: 16px;
+        width: 103px;
+        margin-right: 180px;
+    }
+    .logo-footer{
+        margin-right: 400px;
+    }
+    .Kontacts{
+        margin-right: 180px;
+    }
+    .rights{
+        margin-right: 140px;
+    }
+    .New12{
+        flex-direction: column-reverse;
+    }
+    
+
+
+
+
+  }
